@@ -15,7 +15,16 @@ $base-font-color: $dark-gray;
 $base-background-color: $very-light-gray;
 
 body {
+  @include outer-container;
   font-family: $base-font-family;
   background-color: $base-background-color;
   color: $base-font-color;
+}
+
+.name {
+  @include outer-container;
+  @include span-columns(10);
+  @include shift(2);
+  font-family: 'Amatic SC';
+  font-size: 12em;
 }
