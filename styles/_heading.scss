@@ -1,0 +1,18 @@
+.name {
+  @include outer-container;
+  @include span-columns(10);
+  @include shift(2);
+  font-size: 12em;
+  margin-top: 5%;
+}
+
+.titles {
+  @include outer-container;
+  @include span-columns(8);
+  @include shift(6);
+  font-size: 3em;
+}
+
+.second-title{
+  @include outer-container;
+}

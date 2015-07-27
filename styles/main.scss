@@ -2,7 +2,7 @@
 @import '../bower_components/neat/app/assets/stylesheets/neat';
 
 // Typography
-$base-font-family: $helvetica;
+$base-font-family: 'Amatic SC';
 
 // Colors
 $blue: #477dca;
@@ -12,19 +12,16 @@ $light-gray: #ddd;
 $very-light-gray: #fafafa;
 
 $base-font-color: $dark-gray;
-$base-background-color: $very-light-gray;
+$base-background-color: rgbA(255, 248, 220, 1);
+
+//Imports
+@import 'reset';
+@import 'heading';
+@import 'body-text';
 
 body {
   @include outer-container;
   font-family: $base-font-family;
   background-color: $base-background-color;
   color: $base-font-color;
-}
-
-.name {
-  @include outer-container;
-  @include span-columns(10);
-  @include shift(2);
-  font-family: 'Amatic SC';
-  font-size: 12em;
 }
