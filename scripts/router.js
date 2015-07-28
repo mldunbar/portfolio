@@ -16,24 +16,28 @@ var Router = Backbone.Router.extend({
   },
 
   index: function(){
+    this.showView(new IndexView());
     var headerView = new HeaderView();
     $('#app').prepend(headerView.el);
-    var view = new IndexView();
-    $('#app').append(view.el);
   },
 
   experience: function(){
+    this.showView(new ExperienceView());
     var headerView = new HeaderView();
     $('#app').prepend(headerView.el);
-    var view = new ExperienceView();
-    $('#app').html(view.el);
   },
 
   contact: function(){
+    this.showView(new ContactView());
     var headerView = new HeaderView();
     $('#app').prepend(headerView.el);
-    var view = new ContactView();
-    $('#app').html(view.el);
+  },
+
+  showView: function(view) {
+    if(this.currentView) this.currentView.remove();
+    this.currentView = view;
+    $('#app').append(view.el);
+    return view;
   }
 
 });
