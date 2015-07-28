@@ -1,6 +1,6 @@
 .header-links{
   @include outer-container;
-  @include shift(1);
+  margin-top: 2%;
 }
 
 .header-links li{
