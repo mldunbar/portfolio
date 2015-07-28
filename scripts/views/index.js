@@ -10,8 +10,8 @@ export default Backbone.View.extend({
   },
 
   render: function(options) {
-    this.$el.prepend(this.headerView.el);
-    this.$el.html(this.template);
-  },
+    this.$el.prepend(this.headerView);
+    this.$el.append(this.template);
+  }
 
 });

@@ -15,21 +15,33 @@ var Router = Backbone.Router.extend({
 
   },
 
-  index: function(){
-    var view = new IndexView();
+  header: function(){
+    var view = new HeaderView();
     $('#app').html(view.el);
   },
 
-  experience: function(){
+  index: function(){
+    var headerView = new HeaderView();
+    $('#app').prepend(headerView.el);
+    var view = new IndexView();
+    $('#app').append(view.el);
+  },
 
+  experience: function(){
+    var headerView = new HeaderView();
+    $('#app').prepend(headerView.el);
+    var view = new ExperienceView();
+    $('#app').html(view.el);
   },
 
   contact: function(){
-
-  },
-
-  header: function(){
-
+    var headerView = new HeaderView();
+    $('#app').prepend(headerView.el);
+    var view = new ContactView();
+    $('#app').html(view.el);
   }
 
 });
+
+var router = new Router();
+export default router;

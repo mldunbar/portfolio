@@ -8,6 +8,6 @@ export default Backbone.View.extend({
 
   render: function(options) {
     this.$el.html(this.template);
-  },
+  }
 
 });
