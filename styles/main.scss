@@ -18,10 +18,18 @@ $base-background-color: rgbA(255, 248, 220, 1);
 @import 'reset';
 @import 'heading';
 @import 'body-text';
+@import 'header';
+@import 'contact';
+@import 'experience';
 
 body {
   @include outer-container;
   font-family: $base-font-family;
   background-color: $base-background-color;
   color: $base-font-color;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
 }

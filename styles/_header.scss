@@ -1,0 +1,10 @@
+.header-links{
+  @include outer-container;
+  margin-top: 2%;
+}
+
+.header-links li{
+  display: inline-block;
+  margin-left: 10%;
+  font-size: 2em;
+}

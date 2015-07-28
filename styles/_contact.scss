@@ -1,0 +1,16 @@
+.contact-links {
+  @include outer-container;
+  @include shift(4);
+}
+
+.contact-links li {
+  display: inline-block;
+}
+
+.twitter-link {
+  margin-left: 100%;
+}
+
+.linkedin-link {
+  margin-left: 200%;
+}

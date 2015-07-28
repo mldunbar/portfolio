@@ -17,3 +17,11 @@
 .second-title{
   @include outer-container;
 }
+
+.subpage-heading{
+  @include outer-container;
+  @include shift(4);
+  font-size: 4em;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
