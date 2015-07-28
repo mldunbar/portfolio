@@ -18,6 +18,7 @@ $base-background-color: rgbA(255, 248, 220, 1);
 @import 'reset';
 @import 'heading';
 @import 'body-text';
+@import 'header';
 
 body {
   @include outer-container;

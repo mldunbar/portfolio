@@ -15,11 +15,6 @@ var Router = Backbone.Router.extend({
 
   },
 
-  header: function(){
-    var view = new HeaderView();
-    $('#app').html(view.el);
-  },
-
   index: function(){
     var headerView = new HeaderView();
     $('#app').prepend(headerView.el);
