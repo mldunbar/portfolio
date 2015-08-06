@@ -1,17 +1,14 @@
 .par1 i {
-  @include outer-container;
-  @include shift(4);
-  @include span-columns(1);
+  position: absolute;
+  margin-left: 50%;
 }
 
 .par2 i {
-  @include outer-container;
-  @include shift(4);
-  @include span-columns(1);
+  position: absolute;
+  margin-left: -40%;
 }
 
 .par3 i {
-  @include outer-container;
-  @include shift(4);
-  @include span-columns(1);
+  position: absolute;
+  margin-left: -30%;
 }

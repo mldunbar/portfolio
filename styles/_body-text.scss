@@ -28,3 +28,27 @@
   @include span-columns(4);
   margin-bottom: 10%;
 }
+
+@include media(max-width 800px) {
+
+.body-text .par1{
+  @include outer-container;
+  @include shift(1);
+  @include span-columns(10);
+  margin-bottom: 10%;
+}
+
+.body-text .par2{
+  @include outer-container;
+  @include shift(1);
+  @include span-columns(10);
+  margin-bottom: 10%;
+}
+
+.body-text .par3{
+  @include outer-container;
+  @include shift(1);
+  @include span-columns(10);
+  margin-bottom: 10%;
+}
+}
