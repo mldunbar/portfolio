@@ -201,10 +201,6 @@ exports['default'] = Backbone.View.extend({
 
   template: JST['index'],
 
-  events: {
-    'click .index-link .contact-link .resume-link .github-link .experience-link': 'remove'
-  },
-
   initialize: function initialize() {
     this.render();
     this.headerView = new _header2['default']();
