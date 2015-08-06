@@ -1,19 +1,17 @@
 .par1 i {
-  margin-left: 150%;
-  margin-top: -100%;
+  @include outer-container;
+  @include shift(4);
+  @include span-columns(1);
 }
 
 .par2 i {
-  margin-left: -100%;
-  margin-top: -150%;
+  @include outer-container;
+  @include shift(4);
+  @include span-columns(1);
 }
 
 .par3 i {
-  margin-left: -120%;
-  margin-top: -150%;
-}
-
-.par3 .fa-picture-o {
-  margin-left: -180%;
-  margin-top: -150%;
+  @include outer-container;
+  @include shift(4);
+  @include span-columns(1);
 }
