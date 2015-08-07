@@ -22,6 +22,7 @@ $base-background-color: rgbA(255, 248, 220, 1);
 @import 'contact';
 @import 'experience';
 @import 'animate';
+@import 'links';
 
 body {
   @include outer-container;
