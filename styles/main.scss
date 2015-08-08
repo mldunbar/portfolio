@@ -23,6 +23,7 @@ $base-background-color: rgbA(255, 248, 220, 1);
 @import 'experience';
 @import 'animate';
 @import 'links';
+@import 'hover-min';
 
 body {
   @include outer-container;
