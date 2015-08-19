@@ -30,9 +30,26 @@ body {
   font-family: $base-font-family;
   background-color: $base-background-color;
   color: $base-font-color;
+  background-image: url('https://images.unsplash.com/photo-1433733071959-30cd185d14a8?q=80&fm=jpg&s=2bb5c5d8e0b1e5a0c994fc660681348e');
 }
 
 #app {
   height: 100%;
   width: 100%;
+}
+
+.par1{
+  background-color: rgbA(255, 248, 220, .7);
+  padding: 2%;
+}
+
+.par3{
+  background-color: rgbA(255, 248, 220, .7);
+  padding: 2%;
+}
+
+i{
+  background-color: rgbA(255, 248, 220, .7);
+  padding: 2%;
+  border-radius: 50%;
 }
