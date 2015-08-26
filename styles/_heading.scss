@@ -6,26 +6,26 @@
   color: #FEF8DA;
 } */
 
-.cover {
-  color: $base-background-color;
-}
-
 .name {
   @include outer-container;
-  @include span-columns(10);
-  @include shift(2);
+  @include span-columns(9);
+  @include shift(1.5);
+  text-align: center;
   font-size: 12em;
   margin-top: 5%;
-  color: $base-background-color;
+  color: $base-font-color;
+  background-color: $base-background-color;
 }
 
 .titles {
   @include outer-container;
-  @include span-columns(8);
-  @include shift(6);
+  @include span-columns(9);
+  @include shift(1.5);
+  text-align: center;
   font-size: 3em;
   margin-bottom: 10%;
-  color: $base-background-color;
+  color: $base-font-color;
+  background-color: $base-background-color;
 }
 
 .second-title{
