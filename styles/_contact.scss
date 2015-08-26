@@ -11,13 +11,12 @@
   margin-left: 100%;
 }
 
-
 .linkedin-link {
   margin-left: 200%;
 }
 
 .contact-links i {
-  background-color: rgbA(255, 248, 220, .7);
+  background-color: $base-background-color;
   padding: 10%;
   border-radius: 25%;
 }

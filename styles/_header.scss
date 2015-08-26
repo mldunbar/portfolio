@@ -1,7 +1,8 @@
 .header-links{
   @include outer-container;
   margin-top: 2%;
-  background-color: rgbA(255, 248, 220, .7);
+  background-color: $base-background-color;
+  border-radius: 5px;
 }
 
 .header-links li{
