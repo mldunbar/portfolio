@@ -39,17 +39,19 @@ body {
 }
 
 .par1{
-  background-color: rgbA(255, 248, 220, .9);
+  background-color: $base-background-color;
   padding: 2%;
+  border-radius: 5px;
 }
 
 .par3{
-  background-color: rgbA(255, 248, 220, .9);
+  background-color: $base-background-color;
   padding: 2%;
+  border-radius: 5px;
 }
 
 i{
-  background-color: rgbA(255, 248, 220, .9);
+  background-color: $base-background-color;
   padding: 2%;
   border-radius: 50%;
 }
