@@ -1,5 +1,4 @@
 .header-links{
-  @include outer-container;
   margin-top: 2%;
   background-color: $base-background-color;
   border-radius: 5px;
@@ -7,6 +6,6 @@
 
 .header-links li{
   display: inline-block;
-  margin-left: 1%;
+  margin-left: 1.5%;
   font-size: 1.5em;
 }

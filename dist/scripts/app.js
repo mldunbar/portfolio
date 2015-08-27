@@ -26,6 +26,10 @@ Object.defineProperty(exports, '__esModule', {
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
 
+var _viewsProjects = require('./views/projects');
+
+var _viewsProjects2 = _interopRequireDefault(_viewsProjects);
+
 var _viewsIndex = require('./views/index');
 
 var _viewsIndex2 = _interopRequireDefault(_viewsIndex);
@@ -47,7 +51,8 @@ var Router = Backbone.Router.extend({
   routes: {
     '': 'index',
     'experience': 'experience',
-    'contact': 'contact'
+    'contact': 'contact',
+    'projects': 'projects'
   },
 
   initialize: function initialize() {},
@@ -59,6 +64,11 @@ var Router = Backbone.Router.extend({
 
   experience: function experience() {
     this.showView(new _viewsExperience2['default']());
+    this.showHeader(new _viewsHeader2['default']());
+  },
+
+  projects: function projects() {
+    this.showView(new _viewsProjects2['default']());
     this.showHeader(new _viewsHeader2['default']());
   },
 
@@ -332,6 +342,38 @@ var _header2 = _interopRequireDefault(_header);
 exports['default'] = Backbone.View.extend({
 
   template: JST['index'],
+
+  initialize: function initialize() {
+    this.render();
+    this.headerView = new _header2['default']();
+  },
+
+  render: function render(options) {
+    this.$el.prepend(this.headerView);
+    this.$el.append(this.template);
+  }
+
+});
+module.exports = exports['default'];
+  
+});
+
+require.register("views/projects", function(exports, require, module){
+  'use strict';
+
+Object.defineProperty(exports, '__esModule', {
+  value: true
+});
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { 'default': obj }; }
+
+var _header = require('./header');
+
+var _header2 = _interopRequireDefault(_header);
+
+exports['default'] = Backbone.View.extend({
+
+  template: JST['projects'],
 
   initialize: function initialize() {
     this.render();

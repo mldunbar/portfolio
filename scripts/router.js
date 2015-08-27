@@ -1,3 +1,4 @@
+import ProjectsView from './views/projects';
 import IndexView from './views/index';
 import ExperienceView from './views/experience';
 import ContactView from './views/contact';
@@ -8,7 +9,8 @@ var Router = Backbone.Router.extend({
   routes: {
     '' : 'index',
     'experience' : 'experience',
-    'contact' : 'contact'
+    'contact' : 'contact',
+    'projects' : 'projects',
   },
 
   initialize: function(){
@@ -22,6 +24,11 @@ var Router = Backbone.Router.extend({
 
   experience: function(){
     this.showView(new ExperienceView());
+    this.showHeader(new HeaderView());
+  },
+
+  projects: function(){
+    this.showView(new ProjectsView());
     this.showHeader(new HeaderView());
   },
 

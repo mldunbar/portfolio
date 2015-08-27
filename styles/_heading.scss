@@ -1,11 +1,3 @@
-/* .cover {
-  width: 100%;
-  height: 350px;
-  z-index: -40;
-  background-image: url('https://images.unsplash.com/photo-1433733071959-30cd185d14a8?q=80&fm=jpg&s=2bb5c5d8e0b1e5a0c994fc660681348e');
-  color: #FEF8DA;
-} */
-
 .name {
   @include outer-container;
   @include span-columns(9);
