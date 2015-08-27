@@ -47,7 +47,8 @@ var Router = Backbone.Router.extend({
   routes: {
     '': 'index',
     'experience': 'experience',
-    'contact': 'contact'
+    'contact': 'contact',
+    'projects': 'projects'
   },
 
   initialize: function initialize() {},
@@ -59,6 +60,11 @@ var Router = Backbone.Router.extend({
 
   experience: function experience() {
     this.showView(new _viewsExperience2['default']());
+    this.showHeader(new _viewsHeader2['default']());
+  },
+
+  projects: function projects() {
+    this.showView(new ProjectsView());
     this.showHeader(new _viewsHeader2['default']());
   },
 

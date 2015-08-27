@@ -8,7 +8,8 @@ var Router = Backbone.Router.extend({
   routes: {
     '' : 'index',
     'experience' : 'experience',
-    'contact' : 'contact'
+    'contact' : 'contact',
+    'projects' : 'projects',
   },
 
   initialize: function(){
@@ -22,6 +23,11 @@ var Router = Backbone.Router.extend({
 
   experience: function(){
     this.showView(new ExperienceView());
+    this.showHeader(new HeaderView());
+  },
+
+  projects: function(){
+    this.showView(new ProjectsView());
     this.showHeader(new HeaderView());
   },
 
