@@ -1,3 +1,4 @@
+import ProjectsView from './views/projects';
 import IndexView from './views/index';
 import ExperienceView from './views/experience';
 import ContactView from './views/contact';
