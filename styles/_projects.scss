@@ -1,15 +1,19 @@
 .par1 img {
+/*   @include outer-container;
+@include span-columns(4); */
   position: absolute;
   margin-top: -2.5%;
   margin-left: 35%;
-  width: 400px;
-  height: 200px;
+  height: 180px;
+  vertical-align: middle;
 }
 
 .par3 img {
+  /* @include outer-container;
+  @include span-columns(4); */
   position: absolute;
   margin-top: -5%;
   margin-left: -40%;
-  width: 400px;
-  height: 200px;
+  height: 180px;
+  vertical-align: middle;
 }
