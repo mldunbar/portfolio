@@ -1,9 +1,14 @@
+.cover {
+  color: $base-background-color;
+}
+
 .name {
   @include outer-container;
   @include span-columns(10);
   @include shift(2);
   font-size: 12em;
   margin-top: 5%;
+  color: $base-background-color;
 }
 
 .titles {
@@ -12,6 +17,7 @@
   @include shift(6);
   font-size: 3em;
   margin-bottom: 10%;
+  color: $base-background-color;
 }
 
 .second-title{
@@ -24,4 +30,8 @@
   font-size: 4em;
   padding-top: 5%;
   padding-bottom: 5%;
+}
+
+.subpage-heading span {
+  border-radius: 10px;
 }

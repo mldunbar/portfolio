@@ -12,7 +12,7 @@ $light-gray: #ddd;
 $very-light-gray: #fafafa;
 
 $base-font-color: $dark-gray;
-$base-background-color: rgbA(255, 248, 220, 1);
+$base-background-color: rgbA(255, 248, 220, .8);
 
 //Imports
 @import 'reset';
@@ -21,15 +21,38 @@ $base-background-color: rgbA(255, 248, 220, 1);
 @import 'header';
 @import 'contact';
 @import 'experience';
+@import 'projects';
+@import 'animate';
+@import 'links';
+@import 'hover-min';
 
 body {
   @include outer-container;
   font-family: $base-font-family;
   background-color: $base-background-color;
   color: $base-font-color;
+  background-image: url('https://images.unsplash.com/photo-1433733071959-30cd185d14a8?q=80&fm=jpg&s=2bb5c5d8e0b1e5a0c994fc660681348e');
 }
 
 #app {
   height: 100%;
   width: 100%;
+}
+
+.par1{
+  background-color: $base-background-color;
+  padding: 2%;
+  border-radius: 5px;
+}
+
+.par3{
+  background-color: $base-background-color;
+  padding: 2%;
+  border-radius: 5px;
+}
+
+i{
+  background-color: $base-background-color;
+  padding: 2%;
+  border-radius: 50%;
 }
